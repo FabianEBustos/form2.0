@@ -7,3 +7,76 @@
 body {
   background-color: lightblue;
 }
+
+.principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_container {
+  width:60%;
+}
+
+.form {
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: darkgray;
+  padding: 10px;  
+}
+
+.form__input {
+  padding: 5px;
+  display: flex;
+}
+
+.form__input label {
+  width: 20%;
+}
+
+.form__input input {
+  width: 85%;
+}
+
+.form__button {
+  display:block;
+  padding: 5px;
+  text-align: center;
+}
+
+.form__button button {
+  margin:0 5px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 490px) {
+  .form__input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__input input {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 490px) and (max-width: 550px){
+  .form__input label {
+    width:30%;
+  }
+
+  .form__input input {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px){
+  .form__input label {
+    width:33%;
+  }
+
+  .form__input input {
+    width: 82%;
+  }
+}
